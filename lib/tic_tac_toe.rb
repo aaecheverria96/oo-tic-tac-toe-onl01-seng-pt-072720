@@ -80,12 +80,10 @@ end
 end
 
 def won?
- WIN_COMBINATIONS.any? do |combo|
-   binding.pry
-   if position_taken?(combo[0]) && @board[combo[0]] == @board[combo[1]] && @board[combo[1]] == @board[combo[2]]
-    return  combo
-end
-end
+ WIN_COMBINATIONS.each do |combo| 
+   if (position_taken?(combo[0]) && position_taken?(combo[1]) && position_taken?(combo[2])) && (@board[combo[0]] ==  @board[combo[1]] && @board[combo[1]] == @board[combo[2]]) 
+     true 
+ end 
 end
 
 def full?
