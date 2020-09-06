@@ -108,7 +108,7 @@ end
 def over?
   if draw? == true
     true
-  elsif !won?.empty?
+  elsif won? != false
     true
   elsif turn_count < 9
     false
