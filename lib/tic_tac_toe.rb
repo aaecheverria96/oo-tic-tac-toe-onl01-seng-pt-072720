@@ -83,12 +83,12 @@ def won?
   found_combo = []
  WIN_COMBINATIONS.each do |combo|
    if (position_taken?(combo[0]) && position_taken?(combo[1]) && position_taken?(combo[2])) && (@board[combo[0]] ==  @board[combo[1]] && @board[combo[1]] == @board[combo[2]])
-     found_combo = combo 
+     found_combo = combo
    end
  end
 
- found_combo 
- 
+ found_combo
+
 end
 
 def full?
