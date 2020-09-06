@@ -87,7 +87,7 @@ def won?
    end
  end
 
- found_combo = true 
+ found_combo = true
 end
 
 def full?
