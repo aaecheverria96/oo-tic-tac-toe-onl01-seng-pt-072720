@@ -128,7 +128,7 @@ def play
   until over? do
     turn
   end
-  if won? 
+  if won?
     puts "Congratulations #{winner}"
   end
 
